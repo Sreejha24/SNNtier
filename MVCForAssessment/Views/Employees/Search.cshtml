@@ -1,0 +1,102 @@
+﻿@model IEnumerable<MVCForAssessment.Models.Employee>
+
+@{
+    ViewData["Title"] = "Search";
+}
+
+<h1>Search</h1>
+<form method="get" asp-action="Search">
+    <select id="slct" val="empDetails">
+        <option value="EmpId">@Html.DisplayNameFor(m => m.EmpId)</option>
+        <option value="EmpName">@Html.DisplayNameFor(m => m.EmpName)</option>
+        <option value="City">@Html.DisplayNameFor(m => m.City)</option>
+    </select>
+    @Html.TextBox("search")
+    <input type="search" id="btn" value="search"/>
+</form>
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.EmpId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.EmpName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.City)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Salary)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Depts)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody id="Tdata">
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.EmpId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.EmpName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.City)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Salary)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Depts.DeptId)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.EmpId">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.EmpId">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.EmpId">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+
+<script>
+    $(document).ready(function () {
+        $("#btn").click(function () {
+            var searchBy = $("#slct").val();
+            var searchValue = $("#search").val();
+            var DataSet = $("#Tdata");
+            DataSet.html("");
+            $.ajax({
+                type: "Post",
+                url: "/Employees/SearchVal?searchBy=" +searchBy  +"&searchValue=" +searchValue,
+                contentType: "html",
+                success: function (result) {
+                    if (result.length == 0) {
+                        DataSet.append("<tr><td colspan = 5>No Matches Found</td></tr>")
+                    } else {
+                        $.each(result, function (index, value) {
+                            var data = "<tr>"
+                                + "<td>" + value.empId + "</td>"
+                                + "<td>" + value.empName + "</td>"
+                                + "<td>" + value.city + "</td>"
+                                + "<td>" + value.salary + "</td>"
+                                + "<td>" + value.deptId + "</td>"
+                                + "</tr>";
+
+                            DataSet.append(data);
+                        });
+                    }
+                }
+
+            });
+        });
+    });
+</script>

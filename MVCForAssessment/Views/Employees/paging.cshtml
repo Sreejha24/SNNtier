@@ -1,0 +1,106 @@
+﻿@using X.PagedList.Mvc.Core;
+@model X.PagedList.IPagedList<MVCForAssessment.Models.Employee>
+
+@{
+    ViewData["Title"] = "paging";
+    var pageNumber = ViewContext.HttpContext.Request.Query["page"];
+    var pageSize = ViewContext.HttpContext.Request.Query["pagesize"];
+    if (string.IsNullOrEmpty(pageSize))
+    {
+        pageSize = "5";
+    }
+
+    if (string.IsNullOrEmpty(pageNumber))
+    {
+        pageNumber = "1";
+    }
+}
+
+<h1>paging</h1>
+<link href="~/css/IPagedList.css" rel="stylesheet" />
+<div class="row">
+    <div class="col-md-6">
+        <p>
+            <a asp-action="Create">Create New</a>
+        </p>
+    </div>
+    <div class="col-md-3">
+        <label class="mr-2 mt-2 text-info small"> Page number: @pageNumber | @Model.Count records</label>
+    </div>
+    <div class="col-md-3 text-right">
+        <div class="form-group form-inline">
+            <label class="mr-2">Page Size: </label>
+            <select name="PageSize" id="PageSize" class="form-control">
+                @for (var i = 1; i <= 10; i++)
+                {
+                    <option value="@(i*5)">@(i*5)</option>
+                }
+            </select>
+        </div>
+    </div>
+</div>
+
+<table class="table table-danger ">
+    <thead>
+        <tr>
+            <th>
+              EmpName
+            </th>
+            <th>
+               City
+            </th>
+            <th>
+                Salary
+            </th>
+            <th>
+               Depts
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.EmpName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.City)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Salary)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Depts.DeptId)
+                </td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.EmpId">Edit</a> |
+                    <a asp-action="Details" asp-route-id="@item.EmpId">Details</a> |
+                    <a asp-action="Delete" asp-route-id="@item.EmpId">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+<div>
+    @Html.PagedListPager(Model, page => Url.Action("Paging", "Employees", new { page }) + "&pagesize=" + pageSize,
+        X.PagedList.Web.Common.PagedListRenderOptionsBase.ClassicPlusFirstAndLast)
+</div>
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script>
+    $(function () {
+
+        // set default value for Page size dropdown
+        var pageSizeJ = '@pageSize';
+        if (pageSizeJ.length > 0) {
+            $("#PageSize").val(pageSizeJ);
+        }
+
+        // fire on pageSize change
+        $("#PageSize").on("change", function () {
+            window.location.href = '/Employees/Paging?page=@pageNumber&pagesize=' + this.value;
+        });
+    });
+</script>
+

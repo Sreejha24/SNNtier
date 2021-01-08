@@ -1,0 +1,25 @@
+﻿@using Microsoft.AspNetCore.Http;
+@inject IHttpContextAccessor HttpContextAccessor
+@{
+    ViewData["Title"] = "Get";
+    var address = string.Empty;
+    var name = HttpContextAccessor.HttpContext.Request.Cookies["name"].ToString();
+    if (HttpContextAccessor.HttpContext.Request.Cookies["address"]!=null)
+    {
+        address = HttpContextAccessor.HttpContext.Request.Cookies["address"].ToString();
+    }
+    else
+    {
+        address = "Babaji";
+    }
+
+
+    var Name = HttpContextAccessor.HttpContext.Session.GetString("Name");
+}
+
+<h1>Get</h1>
+
+<h4>@name</h4>
+<h4>@address</h4>
+<h3>@Name</h3>
+
