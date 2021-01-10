@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Practice\\MVCForAssessment\\MVCForAssessment\\MVCForAssessment.csproj": {}
+    "D:\\Practice\\MVCAsses\\MVCForAssessment\\MVCForAssessment\\MVCForAssessment.csproj": {}
   },
   "projects": {
-    "D:\\Practice\\MVCForAssessment\\MVCForAssessment\\MVCForAssessment.csproj": {
+    "D:\\Practice\\MVCAsses\\MVCForAssessment\\MVCForAssessment\\MVCForAssessment.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Practice\\MVCForAssessment\\MVCForAssessment\\MVCForAssessment.csproj",
+        "projectUniqueName": "D:\\Practice\\MVCAsses\\MVCForAssessment\\MVCForAssessment\\MVCForAssessment.csproj",
         "projectName": "MVCForAssessment",
-        "projectPath": "D:\\Practice\\MVCForAssessment\\MVCForAssessment\\MVCForAssessment.csproj",
+        "projectPath": "D:\\Practice\\MVCAsses\\MVCForAssessment\\MVCForAssessment\\MVCForAssessment.csproj",
         "packagesPath": "C:\\Users\\sprathipati\\.nuget\\packages\\",
-        "outputPath": "D:\\Practice\\MVCForAssessment\\MVCForAssessment\\obj\\",
+        "outputPath": "D:\\Practice\\MVCAsses\\MVCForAssessment\\MVCForAssessment\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\sprathipati\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -79,6 +79,10 @@
             "NLog.Web.AspNetCore": {
               "target": "Package",
               "version": "[4.10.0, )"
+            },
+            "System.Collections": {
+              "target": "Package",
+              "version": "[4.3.0, )"
             },
             "X.PagedList": {
               "target": "Package",

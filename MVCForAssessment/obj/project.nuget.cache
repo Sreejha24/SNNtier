@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "LcP9ZOJrXV1UHe00SvzmrqcSGQPmxbHHASJOkGw4NhqhvR0T6Zpz8tvxDjLLBEjXiTfRd3yMXa71U3B71FufFQ==",
+  "dgSpecHash": "kd7NFPcomaFsur9Vx4HK2vbc58Ds5rqWjrdHt+KS/0XUdOQTaxDsaaZqeGyjR5/I6FYsWNwh37cmJ/4jP9vV0Q==",
   "success": true,
-  "projectFilePath": "D:\\Practice\\MVCForAssessment\\MVCForAssessment\\MVCForAssessment.csproj",
+  "projectFilePath": "D:\\Practice\\MVCAsses\\MVCForAssessment\\MVCForAssessment\\MVCForAssessment.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\sprathipati\\.nuget\\packages\\microsoft.aspnetcore.antiforgery\\2.2.0\\microsoft.aspnetcore.antiforgery.2.2.0.nupkg.sha512",
     "C:\\Users\\sprathipati\\.nuget\\packages\\microsoft.aspnetcore.authentication.abstractions\\2.2.0\\microsoft.aspnetcore.authentication.abstractions.2.2.0.nupkg.sha512",

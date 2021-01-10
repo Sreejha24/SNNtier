@@ -34,6 +34,7 @@
           "NLog": "4.7.6",
           "NLog.Config": "4.7.6",
           "NLog.Web.AspNetCore": "4.10.0",
+          "System.Collections": "4.3.0",
           "X.PagedList": "8.0.7",
           "X.PagedList.Mvc.Core": "8.0.7",
           "Microsoft.AspNetCore.Antiforgery.Reference": "3.1.0.0",

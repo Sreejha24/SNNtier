@@ -14,7 +14,7 @@ namespace MVCForAssessment
     {
         public static void Main(string[] args)
         {
-            var logger = NLog.Web.NLogBuilder.ConfigureNLog("nlog.config").GetCurrentClassLogger();
+           // var logger = NLog.Web.NLogBuilder.ConfigureNLog("nlog.config").GetCurrentClassLogger();
             CreateHostBuilder(args).Build().Run();
         }
 

@@ -16,6 +16,6 @@ namespace MVCForAssessment.Models
 
         public string  DeptName { get; set; }
 
-        public ICollection<Employee> Employees { get; set; }
+       // public ICollection<Employee> Employees { get; set; }
     }
 }

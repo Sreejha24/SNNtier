@@ -22,7 +22,7 @@ namespace MVCForAssessment.Controllers
         }
         public IActionResult DependencyDemo()
         {
-          ViewBag.result =   _Ddemo.Sum(4, 6);
+          ViewBag.result =   _Ddemo.Sum(7, 6);
             return View();
         }
     }

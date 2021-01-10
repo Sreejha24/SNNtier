@@ -1,0 +1,94 @@
+﻿@model IEnumerable<MVCForAssessment.Models.Employee>
+
+
+    @{
+        var emp = (IEnumerable<MVCForAssessment.Models.Employee>)ViewBag.Employee;
+        var dept = (IEnumerable<MVCForAssessment.Models.Depts>)ViewData["Depts"];
+    }
+
+    <p>
+        <a asp-action="Create">Create New</a>
+    </p>
+    <h1>Employee</h1>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                   EmpName
+                </th>
+                <th>
+                    City
+                </th>
+                <th>
+                    Salary
+                </th>
+                <th>
+                    Depts
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in emp)
+            {
+                <tr>
+                    <td>
+                        @item.EmpName
+                    </td>
+                    <td>
+                        @item.City
+                    </td>
+                    <td>
+                        @item.Salary
+                    </td>
+                    <td>
+                        @item.DeptId
+                    </td>
+                    <td>
+                        <a asp-action="Edit" asp-route-id="@item.EmpId">Edit</a> |
+                        <a asp-action="Details" asp-route-id="@item.EmpId">Details</a> |
+                        <a asp-action="Delete" asp-route-id="@item.EmpId">Delete</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+    <h1>Department</h1>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>DeptId</th>
+                <th>DeptName</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in dept)
+            {
+                <tr>
+                    <td>
+                        @item.DeptId
+                    </td>
+                    <td>
+                        @item.DeptName
+                    </td>
+
+                    <td>
+                        <a asp-action="Edit" asp-route-id="@item.DeptId">Edit</a> |
+                        <a asp-action="Details" asp-route-id="@item.DeptId">Details</a> |
+                        <a asp-action="Delete" asp-route-id="@item.DeptId">Delete</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<h1>@TempData["sreejha"]</h1>
+

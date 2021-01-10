@@ -1,0 +1,302 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <style>
+        . /*DivClass{
+            font : blue;
+            background:red;
+        }*/
+    </style>
+</head>
+<body>
+    <div id="Divid" style="display:none">
+        <a href=" www.W3schools.com">W3Schools</a>
+        <p class="P1Class">This is First Paragraph</p>
+        <p>This is Second Paragraph</p>
+        <p>This Third Second Paragraph</p>
+    </div>
+    <input type="text" id="txtBlur" />
+    <input type="text" id="txtBox" />
+    <input type="text" id="txtBox" />
+    <input type="button" id="btn" />
+
+    <div id="Divid2" style="border:1px solid black;width:100px;height:130px;overflow:auto">
+        The longest word in the english dictionary is: pneumonoultramicrosco
+        picsilicovolcanoconiosisqqqqqqqqqqqq
+        qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq
+        qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq
+        qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq
+        qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq
+        qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq
+        qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq
+        qqqqqqqqqqqqqqqqqqqqqqqqqqqqqq.
+    </div><br>
+
+
+    <div id="divScroll" style="height:100px;width:300px;overflow:scroll;">
+        <p id="divP" style="height:300px;width:500px;background:#b6ff00;">
+            This is looking nice.
+        </p>
+    </div>
+
+
+
+    <a id="aPreventDefault" href="http://www.itfunda.com">preventDefault() - Ideally it should go to Attributes.aspx page</a>
+
+    <img id="imgLoad" src="http://www.itfunda.com/Images/itfunda.gif" />
+
+    <script>
+        //$(function () {
+        //    jQuery("#Divid").css("border", "5px solid green");
+        //    $("#Divid").css("border", "5px solid green");
+        //});
+
+        //Selectors:
+
+
+        //$("*").css("border", "2px solid green");
+        //$(".P1Class").css("border", "10px solid red");
+        // $("p").css("border", "2px solid yellow");
+        //$("#Divid").css("border", "5px solid green");
+        // $("a,p").css("background", "blue");
+        // $("input[id$=txtBox]").css("border", "2px solid green");
+        //$("input[id$=txtBox]").val("Ganesh");
+        //$("#Divid p:last-child").css("background", "red");
+        //$("#Divid p:nth-child(3)").css("background", "red");
+        //$("#Divid p:first-child()").css("border", "2px solid red");
+
+
+        //Attributes:
+
+        //$("div").addClass("divClass");
+        //$(".divClass").css("background", "skyblue");
+
+        $("#Divid").attr("class", "DivClass");
+        //$(".DivClass").css("border", "5px solid green");
+
+        //$("#Divid").removeClass("DivClass");
+        //alert($("div").attr("class"))
+        //alert($("div").hasClass("DivClass"));
+
+        //$("#Divid").append("this is appended text");
+        //$("a").appendTo("p");
+        // $("p").prepend("this is prepended text");
+        //$("p").prependTo("a");
+
+        //$("#Divid").text("text added");
+        //$("p").text("text added");
+        //$("#Divid").removeAttr("style");
+
+        //$("#btn").click(function ()
+        //{
+        //    $("#Divid").toggleClass("DivClass"); //write code in bw style tags in head section
+        //});
+        //alert($("#btn").val("Ganesh"));
+        //alert($("#btn").val());
+
+
+
+        //Traversing:
+
+
+        //$("#Divid").add("p").append(" + This is added - ").css("border", "5px solid red");
+        //$("#Divid").children().css("border", "5px solid green");
+
+        //$('p').each(function (index) { alert(index + ': ' + $(this).text()); });
+
+        //$('p').eq(0).css('color', 'red');  // finds first paragraph and add color to it
+
+        // $("p").filter(".P1Class").css("color", "red");
+
+        // $("div").find(".P1Class").css("color", "blue"); //parent tag should use for Find method
+
+        //$("div p").first().css("color", "green");
+
+        //$("div p").last().css("color", "green");
+
+        //$("div p").first().next().css("color","green");
+        //$(".P1Class").parent().css("background", "blue");
+
+
+
+
+        //Manipulations:
+
+
+
+
+        $(".P1Class").after("<h1>Heading 1</h1>").css("background", "skyblue");
+        //$("h1").before("<h2>Heading 2</h2>").css("color", "blue");
+        $("h1").css("background", "Lightgreen").height("200px");
+        //alert($("h1").width());
+
+        //$("h1").insertAfter("#btn");
+        //$("h1").insertBefore("#btn");
+
+
+        //var position = $("h1").position();
+        //alert("left position :"+position.left + " &  Top Position :" + position.top);
+
+        //alert($("div").scrollLeft());    // add style attribute in div section and add OVERFLOW : auto
+
+        // $("div").scrollLeft("100");
+
+        //alert($("#Divid2").scrollLeft());
+
+        //alert($("#Divid2").scrollTop());
+        //$("#Divid2").scrollTop("100");
+        //alert($("#Divid2").scrollTop());
+
+
+
+        //$("#divP").unwrap();
+        //$("#divP").wrap("<div id='divScroll' style='height:100px;width:300px;overflow:scroll;'></div>");
+
+
+
+
+        // Jquery Events:
+
+
+
+
+        // $("#txtBlur").blur(function () { alert("blur handler called"); });
+        // $("#txtBlur").change(function () { alert("change handler called"); });
+        //$("#btn").click(function () { alert("click event called"); })
+        //$("#btn").dblclick(function () { alert("dblclick event called"); });
+        //$("p").click(function () {
+        //    $("p").slideToggle();
+        //});
+        //$("#btn").click(function () {
+        //    $("p").unbind();
+        //});
+        //$(document).ready(function () {
+        //    $("p").bind(" mouseenter click", function () {   // code for multiple events also(mouseEnter,click)
+        //        alert("The paragraph was clicked.");
+        //    });
+        //});
+
+
+
+        //$("#imgError").error(function () { alert("missing image"); });
+
+
+        //$("h1").bind("mousemove", function (e) {
+        //    $(this).text("pageX: " + e.pageX + " pageY: " + e.pageY);
+        //});
+
+
+        //$("#aPreventDefault").click(function (e) { e.preventDefault(); $("#div3").text("sorry default behavior is prevented"); });
+
+        //$("p").click(function (e) { alert(e.target.nodeName); });
+
+        //$("#txtBlur").focus(function ()
+        //    {
+        //    alert("got focus");
+        //});
+        //$("#txtBlur").focusout(function () { alert("got focus out"); });
+
+        // $("#txtBlur").hover(function () { $(this).hide(500); });
+
+        // $("#txtKBlur").keydown(function () { alert(" | key DOWN event fired"); });
+        //$("input").keypress(function () {           //should call with tag name instead of id name
+        //    alert(" | key DOWN event fired");
+        //});
+        //$("input").keyup(function () {           //should call with tag name instead of id name
+        //    alert(" | key DOWN event fired");
+        //});
+
+
+
+        //$("img").load(function () {
+        //    alert("ITFunda.Com Logo loaded");
+        //});
+
+        //reamaining events like MOUSEENTER  MOUSEOVER MOUSEHOVER are also same
+
+        //$(window).scroll(function () {
+        //    $("#Divid2").css("display", "inline").text("You are scrolling").fadeOut("slow");
+        //});
+
+        //$("#btn").toggle(function () {
+        //    $(this).css("background", "red");
+        //}, function () {
+        //    $(this).css("background", "green");
+        //}, function () {
+        //    $(this).css("background", "");
+        //});
+
+        //$("#divTrigger").click(function () { $("form").trigger('submit'); });
+
+
+
+
+
+       // Animations:
+
+
+
+
+
+
+        //$("#btn").click(function ()
+        //{
+        //    $("p").animate({
+        //        width: "800px",
+        //        fontSize: "60px",
+        //        height: "500px"
+        //    },10000); // instead of 500, we can also keep "slow", "fast"
+        //});
+
+        //$("#btn").click(function () {
+        //    $("p").hide("slow");
+        //})
+        ////$("#btn").click(function () {
+        ////    $("p").slideUp();
+        ////});
+        //$("#txtBlur").click(function () {
+        //    $("p").show("slow");
+        //})
+        //$("#btn").click(function () {
+        //    $("p").slideToggle();
+        //});
+        //$("#btn").click(function () {
+        //    $("p").toggle("slow");
+        //});
+
+
+        //$("#txtBlur").click(function () { $("p").stop(); });
+
+        //$("#btnStopp").click(function () {
+        //    $("#divStarClearQueue").clearQueue();
+        //    $("#divStarClearQueue").stop();
+        //});
+
+        //$("#btn").click(function () {
+        //    $("#Divid").slideDown();            //should add style attribute and then display: none
+        //    // $("#divSlideDown").slideDown("slow", QueueIt);
+        //});
+
+        //$("#btn").click(function () {
+        //    $("#Divid").fadeIn("slow");
+        //});
+        //$("#txtBlur").click(function () {
+        //    $("#Divid").fadeOut("slow");
+        //});
+        //$("#txtBlur").click(function () {
+        //    $("#Divid").fadeTo("slow","0.20");
+        //});
+
+        //$("#btn").click(function () {
+        //    $("#Divid").slideDown().delay(1000).fadeOut();
+        //})
+
+
+    </script>
+</body>
+
+</html>

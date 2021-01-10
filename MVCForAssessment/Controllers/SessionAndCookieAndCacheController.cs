@@ -32,7 +32,7 @@ namespace MVCForAssessment.Controllers
             if(cache == null)
             {
                  data = _context.Employee.ToList();
-                 var cacheOptions = new MemoryCacheEntryOptions().SetSlidingExpiration(TimeSpan.FromSeconds(25));
+                 var cacheOptions = new MemoryCacheEntryOptions().SetSlidingExpiration(TimeSpan.FromSeconds(60));
                 _cacheData.Set("Employeedetails", data, cacheOptions);
             }
             else

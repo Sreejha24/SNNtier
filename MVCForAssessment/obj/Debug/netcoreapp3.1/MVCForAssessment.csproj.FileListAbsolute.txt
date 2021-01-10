@@ -70,7 +70,6 @@ D:\Practice\MVCForAssessment\MVCForAssessment\obj\Debug\netcoreapp3.1\MVCForAsse
 D:\Practice\MVCForAssessment\MVCForAssessment\obj\Debug\netcoreapp3.1\MVCForAssessment.TagHelpers.input.cache
 D:\Practice\MVCForAssessment\MVCForAssessment\obj\Debug\netcoreapp3.1\MVCForAssessment.TagHelpers.output.cache
 D:\Practice\MVCForAssessment\MVCForAssessment\obj\Debug\netcoreapp3.1\MVCForAssessment.RazorCoreGenerate.cache
-D:\Practice\MVCForAssessment\MVCForAssessment\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\_ViewStart.cshtml.g.cs
 D:\Practice\MVCForAssessment\MVCForAssessment\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
 D:\Practice\MVCForAssessment\MVCForAssessment\obj\Debug\netcoreapp3.1\Razor\Views\Home\Privacy.cshtml.g.cs
 D:\Practice\MVCForAssessment\MVCForAssessment\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
@@ -209,7 +208,19 @@ D:\Practice\MVCForAssessment\MVCForAssessment\bin\Debug\netcoreapp3.1\nlog.confi
 D:\Practice\MVCForAssessment\MVCForAssessment\bin\Debug\netcoreapp3.1\NLog.dll
 D:\Practice\MVCForAssessment\MVCForAssessment\bin\Debug\netcoreapp3.1\NLog.Extensions.Logging.dll
 D:\Practice\MVCForAssessment\MVCForAssessment\bin\Debug\netcoreapp3.1\NLog.Web.AspNetCore.dll
+D:\Practice\MVCForAssessment\MVCForAssessment\obj\Debug\netcoreapp3.1\Razor\Views\ErrorHandler\Index.cshtml.g.cs
+D:\Practice\MVCForAssessment\MVCForAssessment\obj\Debug\netcoreapp3.1\Razor\Views\Shared\PartialView.cshtml.g.cs
+D:\Practice\MVCForAssessment\MVCForAssessment\obj\Debug\netcoreapp3.1\Razor\Views\PartialAndComponentView\Tempdata.cshtml.g.cs
+D:\Practice\MVCForAssessment\MVCForAssessment\obj\Debug\netcoreapp3.1\Razor\Views\PartialAndComponentView\Index.cshtml.g.cs
+D:\Practice\MVCForAssessment\MVCForAssessment\obj\Debug\netcoreapp3.1\Razor\Views\ViewComponent\ComponentTest.cshtml.g.cs
+D:\Practice\MVCForAssessment\MVCForAssessment\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Components\Demo\Default.cshtml.g.cs
+D:\Practice\MVCForAssessment\MVCForAssessment\obj\Debug\netcoreapp3.1\Razor\Views\MyCustomMiddleware\Middleware.cshtml.g.cs
 D:\Practice\MVCForAssessment\MVCForAssessment\obj\Debug\netcoreapp3.1\MVCForAssessment.csprojAssemblyReference.cache
 D:\Practice\MVCForAssessment\MVCForAssessment\obj\Debug\netcoreapp3.1\MVCForAssessment.csproj.CoreCompileInputs.cache
 D:\Practice\MVCForAssessment\MVCForAssessment\obj\Debug\netcoreapp3.1\MVCForAssessment.MvcApplicationPartsAssemblyInfo.cs
 D:\Practice\MVCForAssessment\MVCForAssessment\obj\Debug\netcoreapp3.1\MVCForAssessment.MvcApplicationPartsAssemblyInfo.cache
+D:\Practice\MVCForAssessment\MVCForAssessment\obj\Debug\netcoreapp3.1\Razor\Views\Employees\RawQuery.cshtml.g.cs
+D:\Practice\MVCForAssessment\MVCForAssessment\obj\Debug\netcoreapp3.1\Razor\Views\Employees\RawQueryComplex.cshtml.g.cs
+D:\Practice\MVCForAssessment\MVCForAssessment\obj\Debug\netcoreapp3.1\Razor\Views\Home\TagHelpers.cshtml.g.cs
+D:\Practice\MVCForAssessment\MVCForAssessment\obj\Debug\netcoreapp3.1\Razor\Views\Employees\Sorting.cshtml.g.cs
+D:\Practice\MVCForAssessment\MVCForAssessment\obj\Debug\netcoreapp3.1\Razor\Areas\Employee\Views\Home\Index.cshtml.g.cs

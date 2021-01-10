@@ -1,0 +1,18 @@
+﻿@{
+    var a = @MVCForAssessment.Models.TagHelper.sum(4, 6);
+    var b = new MVCForAssessment.Models.TagHelper().mul(4, 6);
+    var c = div(6, 2);
+
+}
+@functions 
+{
+   int  div(int a,int b)
+    {
+        return a / b;
+    }
+}
+
+
+<h4>@a</h4>
+<h3>@b</h3>
+<h1>@c</h1>

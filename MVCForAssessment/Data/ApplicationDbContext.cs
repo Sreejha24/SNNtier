@@ -4,6 +4,7 @@ using System.Text;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using MVCForAssessment.Models;
+using MVCForAssessment.Models.View;
 
 namespace MVCForAssessment.Data
 {
@@ -15,5 +16,6 @@ namespace MVCForAssessment.Data
         }
         public DbSet<MVCForAssessment.Models.Employee> Employee { get; set; }
         public DbSet<MVCForAssessment.Models.Depts> Depts { get; set; }
+        public DbSet<MVCForAssessment.Models.View.EDepts> EDepts { get; set; }
     }
 }

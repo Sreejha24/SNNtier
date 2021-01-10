@@ -1,0 +1,21 @@
+﻿
+@{
+    ViewData["Title"] = "Middleware";
+}
+
+<div class="card card-body bg-info">Check Startup.cs</div>
+
+<h1>Middleware</h1>
+
+Middleware is a logic/code that can be injected in the request-response pipeline of .net core application.
+
+<p>
+    The HTTP requests are managed by Request Delegates in the pipeline that can be configured using following extension methods.
+</p>
+<ol>
+    <li><b>Use</b> This is used to register the middleware logic and pass the request to the next middleware in the pipeline.</li>
+    <li><b>Map</b> It is used to map the requested url to specific action</li>
+    <li><b>Run</b> It is used to end the register the middleware logic and end the pipeline registration. If you put any other middlewar after this, it doesn't execute.</li>
+</ol>
+Middleware is registered in the Startup.cs -> Configure mehtod.
+
