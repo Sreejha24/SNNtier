@@ -5,10 +5,6 @@ VisualStudioVersion = 16.0.30611.23
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MVCForAssessment", "MVCForAssessment\MVCForAssessment.csproj", "{593B0937-E9FA-4AB5-9979-713D292916CC}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Linqqq", "..\..\Practice\Linqqq\Linqqq\Linqqq.csproj", "{22E52F96-2355-4AC4-8EA9-4CB3A61F735B}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ADONET", "..\..\Practice\ADONET\ADONET\ADONET.csproj", "{E3AC43E2-65EE-4B66-8524-8DF54E989502}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BusinessAccessLayer", "..\NTier Architecture1\BusinessAccessLayer\BusinessAccessLayer.csproj", "{111B70B3-A9AB-4BD7-8CBC-9F4FD333793D}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataAccsessLayer", "..\NTier Architecture1\DataAccsessLayer\DataAccsessLayer.csproj", "{1F731BDB-11D7-4641-AC20-28DC575D75EB}"
@@ -22,7 +18,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "JQuery", "JQuery", "{884EAD
 		HTMLPage.html = HTMLPage.html
 	EndProjectSection
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EntityFramework", "..\..\..\MVCAsses\EntityFramework\EntityFramework\EntityFramework.csproj", "{BF6F72C9-C02F-4597-AB07-9CFCC0310C85}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EntityFramework", "..\EntityFramework\EntityFramework\EntityFramework.csproj", "{BF6F72C9-C02F-4597-AB07-9CFCC0310C85}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ADONET", "..\ADONET\ADONET\ADONET.csproj", "{DF034797-B6BF-4946-B88F-A5996E36BA72}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Linqqq", "..\Linqqq\Linqqq\Linqqq.csproj", "{BFC596C3-A8CE-420B-856F-1CA918942ED8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -34,14 +34,6 @@ Global
 		{593B0937-E9FA-4AB5-9979-713D292916CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{593B0937-E9FA-4AB5-9979-713D292916CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{593B0937-E9FA-4AB5-9979-713D292916CC}.Release|Any CPU.Build.0 = Release|Any CPU
-		{22E52F96-2355-4AC4-8EA9-4CB3A61F735B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{22E52F96-2355-4AC4-8EA9-4CB3A61F735B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{22E52F96-2355-4AC4-8EA9-4CB3A61F735B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{22E52F96-2355-4AC4-8EA9-4CB3A61F735B}.Release|Any CPU.Build.0 = Release|Any CPU
-		{E3AC43E2-65EE-4B66-8524-8DF54E989502}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E3AC43E2-65EE-4B66-8524-8DF54E989502}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E3AC43E2-65EE-4B66-8524-8DF54E989502}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E3AC43E2-65EE-4B66-8524-8DF54E989502}.Release|Any CPU.Build.0 = Release|Any CPU
 		{111B70B3-A9AB-4BD7-8CBC-9F4FD333793D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{111B70B3-A9AB-4BD7-8CBC-9F4FD333793D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{111B70B3-A9AB-4BD7-8CBC-9F4FD333793D}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -58,6 +50,14 @@ Global
 		{BF6F72C9-C02F-4597-AB07-9CFCC0310C85}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BF6F72C9-C02F-4597-AB07-9CFCC0310C85}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BF6F72C9-C02F-4597-AB07-9CFCC0310C85}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DF034797-B6BF-4946-B88F-A5996E36BA72}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF034797-B6BF-4946-B88F-A5996E36BA72}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF034797-B6BF-4946-B88F-A5996E36BA72}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF034797-B6BF-4946-B88F-A5996E36BA72}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BFC596C3-A8CE-420B-856F-1CA918942ED8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BFC596C3-A8CE-420B-856F-1CA918942ED8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BFC596C3-A8CE-420B-856F-1CA918942ED8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BFC596C3-A8CE-420B-856F-1CA918942ED8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
